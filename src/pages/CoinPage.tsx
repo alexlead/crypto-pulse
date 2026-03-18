@@ -12,7 +12,7 @@ const CoinPage = () => {
     const { id } = useParams<{ id: string }>();
 
     const { data: coin, isLoading, isError } = useQuery({
-        queryKey: ['coin', id], // Ключ зависит от id!
+        queryKey: ['coin', id],
         queryFn: () => fetchCoinDetails(id),
         staleTime: 60000,
     });

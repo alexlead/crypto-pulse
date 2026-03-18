@@ -9,7 +9,6 @@ interface CoinCardProps {
 }
 
 const CoinCard = React.memo(({ coin, isFavorite, onToggleFavorite }: CoinCardProps) => {
-    console.log(`Рендер карточки: ${coin.name}`);
 
     return (
         <div className="p-5 bg-gray-800/50 border border-gray-700 rounded-2xl hover:border-blue-500/50 transition-all shadow-lg group">
